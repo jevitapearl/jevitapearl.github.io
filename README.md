@@ -1,1 +1,0 @@
-# jevitapearl.github.io
