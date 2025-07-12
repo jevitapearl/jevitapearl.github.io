@@ -110,6 +110,8 @@ body{
     line-height: 1.5;
     color: var(--grey-base);
     background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
 }
 
 .container{
