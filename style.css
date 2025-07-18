@@ -89,6 +89,7 @@ ul{
 }
 
 .container{
+  /* margin-top: var(--nav-height); */
   max-width: 120rem;
   padding: 0 2rem;
   width: 100%;
@@ -154,7 +155,7 @@ ul{
   justify-content: space-between;
   align-items: center;
   padding: 0 5rem;
-  position: fixed;
+  position: sticky;
   top: 0;
 }
 
@@ -165,15 +166,20 @@ ul{
 
 .nav-links{
   display: flex;
-  width: 50%;
+  /* width: 50%; */
   justify-content: space-around;
   color: var(--white);
 }
 
+
 /* --------- HERO SECTION ----------- */
 
+.start{
+  margin-top: 5rem;
+}
+
 .hero-section{
-  margin: var(--nav-height) 0 10rem;
+  margin-bottom: 10rem;
   padding: 0 2rem;
   background-color: var(--primary-base);
   color: var(--white);
@@ -208,6 +214,7 @@ ul{
 .projects-section{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 .hover-underline:hover, .hover-underline:active{
@@ -253,6 +260,7 @@ ul{
 
 /* ------------FOOTER SECTION------------- */
 footer{
+  margin-top: 10rem;
   padding: 8rem 0 5rem;
   color: var(--white);
   background-color: var(--primary-base);
