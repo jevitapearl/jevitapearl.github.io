@@ -1,0 +1,263 @@
+
+:root{
+  --primary-base: #5864a4;
+  --primary-tint: #7983b6;
+  --primary-shade: #465083;
+
+  --secondary-base: #CDD6E0;
+  --secondary-tint: 
+  --secondary-shade: ;
+
+  --tertiary-base: #52357b;
+  --tertiary-tint: #755d95;
+  --tertiary-shade: #422a62;
+
+  --white: #ffffff;
+  --black: #000000;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --text-h1: 6.2rem;
+  --text-h2: 4.8rem;
+  --text-h3: 4rem;
+  --text-h4: 3.2rem;
+  --text-h5: 2.4rem;
+  --text-paragraph: 2rem;
+  --text-a: 1.6rem;
+  --text-sm: 1.2rem;
+
+  --nav-height: 7rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: "Archivo Black", sans-serif;
+  background-color: var(--secondary-base);
+  color: var(--black);
+  line-height: 1.5;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+}
+
+h1, h2{
+  letter-spacing: -1px;
+  font-weight: var(--font-weight-bold);
+}
+
+h1{
+  font-size: var(--text-h1);
+}
+
+h2{
+  font-size: var(--text-h2);
+}
+
+h3{
+  font-size: var(--text-h3);
+}
+
+h4{
+  font-size: var(--text-h4);
+}
+
+h5{
+  font-size: var(--text-h5);
+}
+
+p{
+  font-size: var(--text-paragraph);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  font-size: var(--text-a);
+}
+
+ul{
+  list-style: none;
+}
+
+.container{
+  max-width: 120rem;
+  padding: 0 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icon{
+  width: 3rem;
+  filter: invert(1);
+}
+
+/* ----------------COMPONENTS------------------ */
+.btn{
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
+
+.btn-underline:hover, .btn-underline:active{
+  border-radius: 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--white);
+}
+
+.btn-primary:link, .btn-primary:visited{
+  background-color: var(--primary-base);
+  color: var(--white);
+}
+
+.btn-primary:hover, .btn-primary:active{
+  background-color: var(--primary-shade);
+  box-shadow: 2px 2px 5px 2px grey;
+}
+
+.btn-secondary:link, .btn-secondary:visited{
+  background-color: var(--secondary-base);
+  color: var(--white);
+}
+
+.btn-secondary:hover, .btn-secondary:active{
+  background-color: var(--secondary-shade);
+  box-shadow: 2px 2px 5px 2px grey;
+}
+
+
+.btn-tertiary:link, .btn-tertiary:visited{
+  background-color: var(--tertiary-base);
+  color: var(--white);
+}
+
+.btn-tertiary:hover, .btn-tertiary:active{
+  background-color: var(--tertiary-shade);
+  box-shadow: 2px 2px 5px 2px grey;
+}
+
+/* -----------NAVIGATION SECTION-------------- */
+
+.nav-bar{
+  background-color: var(--primary-base);
+  height: var(--nav-height);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  position: fixed;
+  top: 0;
+}
+
+.nav-logo{
+  width: 5rem;
+  filter: invert(1);
+}
+
+.nav-links{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  color: var(--white);
+}
+
+/* --------- HERO SECTION ----------- */
+
+.hero-section{
+  margin: var(--nav-height) 0 10rem;
+  padding: 0 2rem;
+  background-color: var(--primary-base);
+  color: var(--white);
+  height: calc(100vh - var(--nav-height));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  column-gap: 2rem
+}
+
+.hero-image{
+  max-width: 40rem;
+  width: 100%;
+}
+
+/* -----------ABOUT SECTION------------ */
+.about-section{
+  margin-bottom: 10rem;
+}
+
+.about-text{
+  margin: 2rem 0 5rem;
+}
+
+/* ---------PROJECTS SECTION----------- */
+
+.projects-main-heading{
+  margin-bottom: 5rem;
+}
+
+.projects-section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hover-underline:hover, .hover-underline:active{
+  text-decoration: underline black;
+}
+
+.grid-item{
+  background-color: white;
+  padding: 2rem;
+  border: 1.5px solid black;
+
+}
+
+.project-img{
+  width: 100%;
+  border: 1px solid black;
+}
+
+.project-text{
+  margin: 2rem 0;
+}
+
+/* ---------------CTA---------------- */
+
+
+.cta-section{
+  margin: 20rem 0 15rem;
+  color: var(--white);
+}
+
+.cta-card{
+  border-radius: 25px;
+  padding: 10rem 15rem;
+  background-color: var(--tertiary-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  box-shadow: 2px 2px 4px 1px black;
+}
+
+
+/* ------------FOOTER SECTION------------- */
+footer{
+  padding: 8rem 0 5rem;
+  color: var(--white);
+  background-color: var(--primary-base);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

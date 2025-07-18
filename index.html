@@ -3,19 +3,77 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Ocean</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Jevita Pearl | Portfolio</title>
   </head>
 
   <body>
-
     
 
-    <main>
-      <h1>Hey! I'm Jevita Pearl Crasta. I love learning and creating things on the internet .</h1>
+    <header>
+      <!-- NAV SECTION -->
+      <nav class="nav-bar">
+        <a href="https://jevitapearl.github.io"><img class="nav-logo" src="images/logo.svg" alt="logo"></a>
+        <ul class="nav-links">
+          <li><a href="#about" class="btn btn-underline">About</a></li>
+          <li><a href="projects" class="btn btn-underline">Projects</a></li>
+          <li><a href="journey.html" class="btn btn-underline">Journey</a></li>
+          <li><a href="#contact" class="btn btn-underline">Contact</a></li>
+        </ul>
+      </nav>
 
-      <div>This is a link to my first frontend project using HTML and CSS <a href="journal-app/index.html">Journal app</a></div>
+      <!-- HERO SECTION -->
+      <div class="hero-section">
+        <h1>Hey! I'm Jevita Pearl Crasta, a full-stack and Data science enthusiast.</h1>
+        <img class="hero-image" src="images/hero.svg" alt="hero">
+      </div>
+
+    </header>
+
+    <main class="container">
+
+      <!-- ABOUT -->
+      <div class="about-section" id="about">
+        <h2>About</h2>
+        <p class="about-text">Currently a CS student with love for creating things. I love working with numbers and data. Hence, the aspiration to a Data Scientist never leaves me. I also love exploring the internet and hope you fall in love with it too! <br>P.S. For anyone curious about my journey click and find out.</p>
+        <a class="btn btn-tertiary" href="journey.html">Let's sail!</a>
+      </div>
+
+
+      <!-- PROJECTS -->
+      <h2 class="projects-main-heading">Projects</h2>
+
+      <div class="projects-section" id="#projects">
+        <div class="grid-item">
+          <img class="project-img" src="images/journal-project.png" alt="">
+          <a class="hover-underline" href="journal-app/index.html"><h5>Frontend template of Journal app</h5></a>
+          <p class="project-text">This is my first Frontend project and was very helpful in getting my foundations on HTML and CSS very strong.</p>
+          <a class="btn btn-primary" href="journal-app/index.html">View</a>
+        </div>
+      </div>
+
+      <!-- CTA SECTION -->
+      <div id="contact" class="cta-section">
+        <div class="cta-card">
+          <h3>Contact / Hire me </h3>
+          <a class="btn btn-primary" href="">Contact</a>
+        </div>
+      </div>
+
     </main>
 
+    </body>
 
-  </body>
+    <footer >
+      <ul>
+        <li><a href="https://www.github.com/jevitapearl"><img class="icon" src="images/github-icon.svg" alt="github-icon"></a></li>
+        <li><a href="https://www.linkedin.com/in/jevita-pearl/"><img class="icon" src="images/linkedin-icon.svg" alt="linkedin-icon"></a></li>
+        <li><a href="https://jevitapearl.github.io/">Home</a></li>
+      </ul>
+    </footer>
+
 </html>

@@ -1,0 +1,11 @@
+<!-- sample rectangle -->
+<svg width="150" height="150" viewBox="0 5 75 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="pj logo">
+  <text x="7" y="60" font-family="Helvetica Neue, sans-serif"
+        font-size="75" font-weight="700" fill="black" letter-spacing="-10">
+    p
+  </text>
+  <text x="45" y="95" font-family="Helvetica Neue, sans-serif"
+        font-size="80" font-weight="700" fill="black" letter-spacing="0">
+    j
+  </text>
+</svg>
