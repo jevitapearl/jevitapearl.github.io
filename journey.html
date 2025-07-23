@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width ,initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
     <title>Journey!</title>
   </head>
 
@@ -16,10 +17,24 @@
     <header>
     <nav class="nav-bar">
         <a href="https://jevitapearl.github.io"><img class="nav-logo" src="images/logo.svg" alt="logo"></a>
-        <ul class="nav-links">
-          <li><a href="index.html#about" class="btn btn-underline">About</a></li>
-          <li><a href="index.html#contact" class="btn btn-underline">Contact</a></li>
+
+        <ul class="side-bar">
+          <li onclick="closeMenu()"><img src="images/close_menu.svg" alt="close-sidebar" style="filter: invert(1); display:flex; width: 3rem"></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="journey.html">Journey</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <ul class="nav-links">
+          <li><a href="#about" class="btn btn-underline">About</a></li>
+          <li><a href="#projects" class="btn btn-underline">Projects</a></li>
+          <li><a href="journey.html" class="btn btn-underline">Journey</a></li>
+          <li><a href="#contact" class="btn btn-underline">Contact</a></li>
+        </ul>
+
+        <span class="menu" onclick="openMenu()"><img src="images/ham_menu.svg" alt="ham-menu"></span>
+
       </nav>
     </header>
 
@@ -58,6 +73,8 @@
         <li><a href="https://jevitapearl.github.io/">Home</a></li>
       </ul>
     </footer>
+
+    <script src="script.js"></script>
     
   </body>
 </html>

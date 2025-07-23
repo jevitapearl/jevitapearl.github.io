@@ -1,0 +1,70 @@
+/* SMALL LAPTOPS 1024px - 1200px */
+
+@media (max-width: 74rem){
+  /* 1170px / 16px = 73.1rem */
+  /* 74rem * 16px = 1184px */
+
+  html{
+    font-size: 56.25%;
+  }
+
+  .hero-img{
+    width: 35rem;
+  }
+}
+
+/* TABLETS  768px - 1024pX */
+@media (max-width: 67rem){
+  html{
+    font-size: 50%;
+  }
+
+  .projects-section{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* LARGE PHONES 576px - 768px */
+@media(max-width: 45rem){
+  html{
+    font-size: 43.75%;
+  }
+}
+
+@media (max-width: 38rem){
+
+  html{
+    font-size: 37.5%;
+  }
+
+  .nav-bar{
+    height: 8rem;
+    padding: 2rem;
+  }
+
+  .nav-logo{
+    
+    width: 7rem;
+  }
+
+  .nav-links{
+    display: none;
+  }
+
+  .menu{
+    display: flex;
+  }
+
+  .hero-section{
+    padding: 5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image{
+    display: none;
+  }
+
+  .projects-section{
+    grid-template-columns: 1fr;
+  }
+}

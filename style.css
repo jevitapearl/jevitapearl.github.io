@@ -5,8 +5,8 @@
   --primary-shade: #465083;
 
   --secondary-base: #CDD6E0;
-  --secondary-tint: 
-  --secondary-shade: ;
+  --secondary-tint: #d2dae3;
+  --secondary-shade: #b9c1ca;
 
   --tertiary-base: #52357b;
   --tertiary-tint: #755d95;
@@ -110,7 +110,7 @@ ul{
 
 .btn-underline:hover, .btn-underline:active{
   border-radius: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   border-bottom: 2px solid var(--white);
 }
 
@@ -164,12 +164,44 @@ ul{
   filter: invert(1);
 }
 
+.side-bar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background-color: var(--secondary-shade);
+  color: var(--black);
+  height: 100vh;
+  width: 250px;
+  box-shadow: 2px 2px black;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.side-bar li{
+  padding: 1rem 1rem;
+  border-bottom: 2px solid rgb(124, 124, 124);
+  text-align: center;
+  width: 100%;
+}
+
+.side-bar a{
+  padding: 1rem 3rem;
+  width: 100%;
+}
+
+.menu{
+  display: none;
+}
+
 .nav-links{
   display: flex;
-  /* width: 50%; */
   justify-content: space-around;
   color: var(--white);
 }
+
 
 
 /* --------- HERO SECTION ----------- */
@@ -180,7 +212,7 @@ ul{
 
 .hero-section{
   margin-bottom: 10rem;
-  padding: 0 2rem;
+  padding: 2rem;
   background-color: var(--primary-base);
   color: var(--white);
   height: calc(100vh - var(--nav-height));
