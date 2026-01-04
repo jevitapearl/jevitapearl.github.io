@@ -57,6 +57,10 @@
     display: none;
   }
 
+  .hamburger-menu{
+    display: inline-block;
+  }
+
   .hero-container{
     display: flex;
     flex-direction: column-reverse;
@@ -151,14 +155,3 @@
   }
 
 }
-
-
-/* @media (max-width: 24rem){
-  .container{
-    max-width: 25rem;
-  }
-
-  .contact-form-container{
-    max-width: 25rem;
-  }
-} */

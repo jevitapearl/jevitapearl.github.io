@@ -148,7 +148,7 @@ input, textarea{
 }
 
 .hamburger-menu{
-  display: inline-block;
+  display: none;
   width: 3rem;
   height: 3rem;
   margin: 1rem;
