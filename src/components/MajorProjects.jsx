@@ -30,13 +30,13 @@ function MajorProjects(){
       <ul className="major-projects-list">
         {majorprojects.map((project) => {
           return(
-            <li className="project-item" key={project.id}>
+            <li className="major-project-item" key={project.id}>
               <section>
                 <img src={project.img} alt={project.id} />
                 <h4>{project.title}</h4>
                 <p>{project.description}</p>
               </section>
-              <button className="view-btn" onClick={() => handleViewButtonClick(project.link)}>View</button>
+              <button className="btn view-btn" onClick={() => handleViewButtonClick(project.link)}>View</button>
             </li>
           );
         } 

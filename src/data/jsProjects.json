@@ -1,0 +1,62 @@
+[
+  {
+    "title": "People Counter", 
+    "description": "Yes. This can count peope if you want to I guess?",
+    "link": "side-quests/people-counter"
+  },
+  {
+    "title": "Light Bulb", 
+    "description": "Bring some light into your life",
+    "link": "side-quests/light-bulb"
+  },
+  {
+    "title": "Hello world!", 
+    "description": "OG of programming. Say hello to the world.",
+    "link": "side-quests/hello-world"
+  },
+  {
+    "title": "Simple Calculator", 
+    "description": "When projects were as simple as these",
+    "link": "side-quests/simple-calculator"
+  },
+  {
+    "title": "Random number generator", 
+    "description": "Generate random numbers for whatever weird reason you want",
+    "link": "side-quests/random-number-generator"
+  },
+  {
+    "title": "QR code generator", 
+    "description": "Type any text and get the QR code for it.",
+    "link": "side-quests/qr-code-generator"
+  },
+  {
+    "title": "Rock-Paper-Scissors", 
+    "description": "Classic game of rock-paper-scissor against a computer",
+    "link": "side-quests/rock-paper-scissor"
+  },
+  {
+    "title": "Etch-A-Sketch", 
+    "description": "A very fun project to work and use. This really brought out some creativity in me",
+    "link": "side-quests/etch-a-sketch"
+  },
+  {
+    "title": "Meme drum kit", 
+    "description": "Inspired by JS30 + brainrot",
+    "link": "side-quests/meme-drum-kit"
+  },
+  {
+    "title": "Analog and Digital", 
+    "description": "A completely funtional clock displaying my CSS skills",
+    "link": "/side-quests/js-clock"
+  },
+  {
+    "title": "Loading page", 
+    "description": "You can just stare at it. Don't expect anything more. PS: CSS animation is amazing",
+    "link": "/side-quests/loading-page"
+  },
+  {
+    "title": "Random Quote Generator", 
+    "description": "Another random generator. Learning API calls and AJAX.",
+    "link": "/side-quests/random-quote-generator"
+  }
+]

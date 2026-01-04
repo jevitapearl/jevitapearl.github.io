@@ -18,7 +18,7 @@ function Footer(){
   )
 
   return(
-    <div className="footer">
+    <div className="footer" id="footer">
       <p>2025 <FaRegCopyright /></p>
       <p>Assembled by a human. No seriously.</p>
       <p>{dateTime}</p>

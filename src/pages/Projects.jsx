@@ -1,7 +1,18 @@
-function Projects(){
-  return(
-    <p className="working">This page is yet to be designed. Please DM me on LinkedIn for any queries</p>
+import { useState } from "react";
+import PersonalProjects from "../components/PersonalProjects";
+import ProfessionalProjects from "../components/ProfessionalProjects";
 
+function Projects(){
+  const [personalView, setPersonalView] = useState(false);
+
+  return(
+    <div className="projects-container">
+      {personalView? <PersonalProjects/> : <ProfessionalProjects/>}
+
+      <div className="view" onClick={() => setPersonalView(!personalView)}>
+        <span className={"toggle "+(personalView?"toggle-left":"toggle-right")}>{personalView?"Personal":"Professional"}</span>
+      </div>
+    </div>
   );
 }
 

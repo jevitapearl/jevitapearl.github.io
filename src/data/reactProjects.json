@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Excuse app", 
+    "description": "Because “my dog ate my homework” needed an upgrade.",
+    "link": "/react-projects/excuse-app"
+  },
+  {
+    "title": "Toggle switch", 
+    "description": "Proof I can overengineer literally anything.",
+    "link": "/react-projects/toggle-switch"
+  },
+  {
+    "title": "To-do app", 
+    "description": "Now you can ignore tasks digitally.",
+    "link": "/react-projects/to-do-app"
+  }
+]

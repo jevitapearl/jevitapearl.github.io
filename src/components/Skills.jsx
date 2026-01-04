@@ -5,7 +5,7 @@ function Skills(){
   const techSkills = "HTML ✦ CSS ✦ Tailwind ✦ JavaScript ✦ DSA ✦ React.js ✦ Python ✦ DSA ✦ MongoDB ✦ ";
 
   return(
-    <div>
+    <div className="skills-container">
       <h2 className="subsection-heading">Skills</h2>
 
       <div className="tails">

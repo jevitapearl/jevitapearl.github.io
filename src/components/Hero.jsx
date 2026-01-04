@@ -9,10 +9,10 @@ function Hero(){
       </div>
 
       <div className="hero-right">
-        <span className="profile-detail profile-name">Jevita Pearl Crasta</span>
+        <span className="btn profile-name">Jevita Pearl Crasta</span>
         <img className="profile-pic" src={profilePic} alt="profile-picture" />
-        <span className="profile-detail profile-age">20 year old</span>
-        <span className="profile-detail profile-location">India</span>
+        <span className="btn profile-age">20 year old</span>
+        <span className="btn profile-location">India</span>
 
 
       </div>      
