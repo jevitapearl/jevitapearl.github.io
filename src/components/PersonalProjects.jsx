@@ -12,7 +12,7 @@ function PersonalProjects(){
           jsProjects.map((project) => {
             return (
             <li className="project-item" key={project.title}>
-              <Link to={project.link}><h5 className="project-heading">{project.title}</h5></Link>
+              <a href={"https://jevitapearl.github.io"+project.link} target="_blank"><h5 className="project-heading">{project.title}</h5></a>
               <p>{project.description}</p>
             </li>
             );
@@ -26,7 +26,7 @@ function PersonalProjects(){
           reactProjects.map((project) => {
             return (
             <li className="project-item" key={project.title}>
-              <Link to={project.link}><h5 className="project-heading">{project.title}</h5></Link>
+              <a href={"https://jevitapearl.github.io"+project.link} target="_blank"><h5 className="project-heading">{project.title}</h5></a>
               <p>{project.description}</p>
             </li>
             );

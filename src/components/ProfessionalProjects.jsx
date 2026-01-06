@@ -10,7 +10,7 @@ function ProfessionalProjects(){
           professionalProjects.map((project) => {
             return (
             <li className="project-item" key={project.title}>
-              <a href={project.link}><h5 className="project-heading">{project.title}</h5></a>
+              <a href={project.link} target="_blank"><h5 className="project-heading">{project.title}</h5></a>
               <p>{project.description}</p>
             </li>
             );

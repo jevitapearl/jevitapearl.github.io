@@ -7,6 +7,7 @@ import { FaXmark } from "react-icons/fa6";
 
 function Navbar(){
   const [openMenu,setOpenMenu] = useState(false);
+  
   return(
     <nav className="nav-bar">
       <div>
