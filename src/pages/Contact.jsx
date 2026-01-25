@@ -14,7 +14,7 @@ function Contact(){
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault;
+    e.preventDefault();
     const subject = encodeURIComponent(formData.subject);
     const body = encodeURIComponent(
       `Hello, my name is ${formData.name}.\n\n${formData.message}`
@@ -26,11 +26,11 @@ function Contact(){
   }
 
   return(
-    <div className="contact-form-container">
-      <h2 className="contact-form-heading">This is the part where you email me</h2>
-      <form className="contact-form" onSubmit={handleSubmit}>
+    <div className="my-20 flex flex-col gap-12 items-center justify-center min-h-[calc(100vh-7rem)]">
+      <h2 className="my-8 text-center md:text-left">This is the part where you email me</h2>
+      <form className="flex flex-col items-center justify-center min-w-[30rem] md:min-w-[40rem] gap-12" onSubmit={handleSubmit}>
         <input 
-          className="contact-field"
+          className="w-full p-3"
           type="text"
           placeholder="Name"
           onChange={handleChange}
@@ -38,7 +38,7 @@ function Contact(){
           required
         />
         <input 
-          className="contact-field"
+          className="w-full p-3"
           type="text" 
           placeholder="Subject"
           onChange={handleChange}
@@ -46,8 +46,7 @@ function Contact(){
           required
         />
         <textarea 
-          className="contact-field contact-message"
-          type="text" 
+          className="w-full p-3 min-h-[10rem]"
           placeholder="Enter your message"
           onChange={handleChange}
           name="message"
@@ -55,7 +54,6 @@ function Contact(){
         />
         <button className="btn">Submit</button>
       </form>
-      
     </div>
   );
 }

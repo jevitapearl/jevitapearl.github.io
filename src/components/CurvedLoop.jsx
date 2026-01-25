@@ -1,5 +1,4 @@
 import { useRef, useEffect, useState, useMemo, useId } from 'react';
-import './CurvedLoop.css';
 
 const CurvedLoop = ({
   marqueeText = '',
@@ -106,14 +105,14 @@ const CurvedLoop = ({
 
   return (
     <div
-      className="curved-loop-jacket"
+      className="min-h-0 flex items-center justify-center w-full"
       style={{ visibility: ready ? 'visible' : 'hidden', cursor: cursorStyle }}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={endDrag}
       onPointerLeave={endDrag}
     >
-      <svg className="curved-loop-svg" viewBox="0 0 1440 120">
+      <svg className="w-full aspect-[100/12] overflow-visible block text-[4rem] fill-black uppercase font-medium leading-none select-none" viewBox="0 0 1440 120">
         <text ref={measureRef} xmlSpace="preserve" style={{ visibility: 'hidden', opacity: 0, pointerEvents: 'none' }}>
           {text}
         </text>

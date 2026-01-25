@@ -1,14 +1,13 @@
 import CurvedLoop from './CurvedLoop';
 
 function Skills(){
-
   const techSkills = "HTML ✦ CSS ✦ Tailwind ✦ JavaScript ✦ DSA ✦ React.js ✦ Python ✦ DSA ✦ MongoDB ✦ ";
 
   return(
-    <div className="skills-container">
+    <div className="hidden md:block my-28">
       <h2 className="subsection-heading">Skills</h2>
 
-      <div className="tails">
+      <div className="my-28">
         <CurvedLoop
         marqueeText={techSkills}
         curveAmount={100}

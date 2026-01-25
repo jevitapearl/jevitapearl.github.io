@@ -24,25 +24,23 @@ function MajorProjects(){
   }
 
   return(
-    <div className="major-projects-container">
+    <div className="my-40 mx-4 md:mx-0">
       <h2 className="subsection-heading">Projects</h2>
 
-      <ul className="major-projects-list">
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-16">
         {majorprojects.map((project) => {
           return(
-            <li className="major-project-item" key={project.id}>
-              <section>
-                <img src={project.img} alt={project.id} />
+            <li className="bg-secondary-bg rounded-[3rem] p-12 flex flex-col gap-6 shadow-[1px_1px_3px_0px_var(--color-shadow)]" key={project.id}>
+              <section className="flex flex-col gap-6 grow">
+                <img className="h-[25rem] w-full border border-black object-cover object-top" src={project.img} alt={project.id} />
                 <h4>{project.title}</h4>
                 <p>{project.description}</p>
               </section>
-              <button className="btn view-btn" onClick={() => handleViewButtonClick(project.link)}>View</button>
+              <button className="btn text-center" onClick={() => handleViewButtonClick(project.link)}>View</button>
             </li>
           );
-        } 
-        )}
+        })}
       </ul>
-
     </div>
   );
 }

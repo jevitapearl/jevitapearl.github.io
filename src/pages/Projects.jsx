@@ -14,11 +14,23 @@ function Projects(){
   }, [personalView]);
 
   return(
-    <div className="projects-container">
-      {personalView? <PersonalProjects/> : <ProfessionalProjects/>}
+    <div className="mt-12 mb-24 relative">
+      {personalView ? <PersonalProjects/> : <ProfessionalProjects/>}
 
-      <div className="view" onClick={() => setPersonalView(!personalView)}>
-        <span className={"toggle "+(personalView?"toggle-left":"toggle-right")}>{personalView?"Personal":"Professional"}</span>
+      {/* Floating Toggle Switch */}
+      <div 
+        className="sticky bottom-12 left-1/2 z-[999] -translate-x-1/2 scale-75 md:scale-90
+                   border-2 border-black bg-white rounded-[3rem] 
+                   flex items-center w-[20rem] h-[4.5rem] mt-16 cursor-pointer" 
+        onClick={() => setPersonalView(!personalView)}
+      >
+        <span className={`
+          bg-black text-white h-full w-[80%] flex items-center justify-center 
+          rounded-[3rem] text-p transition-transform duration-300 ease-in
+          ${personalView ? "translate-x-0" : "translate-x-[4rem]"}
+        `}>
+          {personalView ? "Personal" : "Professional"}
+        </span>
       </div>
     </div>
   );

@@ -6,18 +6,17 @@ function Education(){
   ];
 
   return(
-    <div className="education-container">
+    <div className="my-28 mx-4 md:mx-0">
       <h2 className="subsection-heading">Education</h2>
       <ul>
         {qualification.map((q) => {
           return(
-            <li className="edu-item" key={q.degree}>
+            <li className="list-disc py-8 ml-6" key={q.degree}>
               <p>{q.degree}</p>
-              <i>{q.school}</i>
+              <i className="text-sm">{q.school}</i>
             </li>
           );
-        } 
-        )}
+        })}
       </ul>
     </div>
   );
