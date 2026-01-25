@@ -11,8 +11,8 @@ function Resume(){
       </div>
 
       <iframe
-        className="w-full aspect-[3/4] md:w-[90%] lg:w-[80%]"
-        src={pdfURL+"#toolbar=0"}
+        className="w-full aspect-[3/4] md:w-[80vw] lg:w-[50vw]"
+        src={pdfURL+"#toolbar=0&navpanes=0&scrollbar=0"}
         title="Resume PDF"
       />
     </div>

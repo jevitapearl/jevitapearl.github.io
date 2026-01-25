@@ -6,27 +6,55 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Blog from "./pages/Blog";
 import Footer from "./components/Footer";
-import { Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <AppLayout/>,
+      children:[
+        {
+          path: "/",
+          element: <Home/>
+        },
+        {
+          path: "/resume",
+          element: <Resume/>
+        },
+        {
+          path: "/contact",
+          element: <Contact/>
+        },
+        {
+          path: "/projects",
+          element: <Projects/>
+        },
+        {
+          path: "/blog",
+          element: <Blog/>
+        }
+      ]
+    }
+    
+  ]);
 
   return (
-    <>
-      <div className="layout-container">
-      <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/resume" element={<Resume/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/projects" element={<Projects/>}/>
-        <Route path="/blog" element={<Blog/>}/>
-      </Routes>
-      </div>
-      <Footer/>
-    </>
-    
-    
+    <RouterProvider router={router}/>
   );
 }
 
 export default App;
+
+function AppLayout(){
+  return(
+    <>
+      <div className="layout-container">
+        <Navbar/>
+        <Outlet/>
+      </div>
+      <Footer/>
+    </>
+    
+  );
+}
