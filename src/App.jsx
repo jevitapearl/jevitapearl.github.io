@@ -6,10 +6,10 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Blog from "./pages/Blog";
 import Footer from "./components/Footer";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <AppLayout/>,
