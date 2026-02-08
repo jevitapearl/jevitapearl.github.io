@@ -59,6 +59,10 @@
            hover:scale-105 transition-transform duration-100 ease-in cursor-pointer;
   }
 
+  .active{
+    @apply text-primary-text rounded-[3rem] border-2 border-primary-text 
+  }
+
   /* Responsive Container */
   .layout-container {
     @apply mx-auto w-full px-4 

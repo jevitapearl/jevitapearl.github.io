@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -10,7 +10,7 @@ function Navbar(){
   return(
     <nav className="h-[7rem] font-nav flex justify-between items-center relative">
       <div className="flex">
-        <Link to="/"><img className="h-[7rem]" src={logo} alt="logo" /></Link>
+        <img className="h-[7rem]" src={logo} alt="logo" />
         <span className="text-sm self-end mb-3">coded by Jev</span>
       </div>
       
@@ -18,12 +18,12 @@ function Navbar(){
       <ul className="hidden md:flex justify-around items-center font-extrabold gap-2">
         {["Home", "Resume", "Contact", "Projects", "Blog"].map((item) => (
           <li key={item}>
-            <Link 
-              className="text-[1.7rem] px-8 py-4 hover:bg-primary-text hover:text-primary-bg hover:rounded-[3rem] duration-20 transition-all" 
+            <NavLink 
+              className="text-[1.7rem] px-8 py-4 hover:bg-primary-text hover:text-primary-bg hover:rounded-[3rem] hover:scale-115 duration-20 transition-all" 
               to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
             >
               {item}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>
@@ -38,7 +38,7 @@ function Navbar(){
         <ul className="flex flex-col items-center gap-8 text-p">
           {["Home", "Resume", "Contact", "Projects", "Blog"].map((item) => (
             <li key={item} onClick={() => setOpenMenu(false)}>
-              <Link className="text-[2rem]" to={item === "Home" ? "/" : `/${item.toLowerCase()}`}>{item}</Link>
+              <NavLink className="text-[2rem]" to={item === "Home" ? "/" : `/${item.toLowerCase()}`}>{item}</NavLink>
             </li>
           ))}
           <li onClick={() => setOpenMenu(false)} className="mt-4">

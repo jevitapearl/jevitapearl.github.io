@@ -13,5 +13,10 @@
     "title": "To-do app", 
     "description": "Now you can ignore tasks digitally.",
     "link": "/react-projects/to-do-app"
+  },
+  {
+    "title": "JP Flix", 
+    "description": "Movie information web app built using the OMDb API, designed to display structured movie data including posters, ratings, cast, and release details. Search functionality is currently being added as part of the next update.",
+    "link": "/react-projects/movies"
   }
 ]
