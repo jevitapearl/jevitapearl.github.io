@@ -31,4 +31,4 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist # The folder the action should deploy (usually 'build' or 'dist' for Vite)
+          folder: dist 
